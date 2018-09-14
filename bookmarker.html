@@ -200,7 +200,7 @@ input[type=text]
 </style>
 <link rel="icon" href="star-icon.png">
 </head>
-<body onload="loadBookMarks()">
+<body onload="loadBookMarks()" id="body">
 <div class="bookmark_form">
 <br/>
 <label><center>Bookmark Name</center></label>
@@ -210,6 +210,8 @@ input[type=text]
 <center><input type="text" id="url" placeholder=" Enter URL "></center>
 <br/>
 <center><input type="button" value="Add Bookmark" name="b1" id="button"></center>
+<hr/>
+<label> &nbsp Set Background <input type="text" id="backgroundcolorcode" style="width:15%;font-size:0.7em" placeholder=" Color-Name/Color-Code"></label>
 </div>
 <center><input type="text" placeholder=" Search Your Bookmark" id="searchInput"></center>
 <div class="bookmarks_panel" id="bookmarks_p">
@@ -218,7 +220,14 @@ input[type=text]
 <script>
 document.getElementById("button").addEventListener('click',addBookMark);
 document.getElementById("searchInput").addEventListener('keyup',Search);
+document.getElementById("backgroundcolorcode").addEventListener('keyup',setBackground);
 
+function setBackground()
+{
+	var color = document.getElementById("backgroundcolorcode").value;
+	var body = document.getElementById("body");
+	body.style.backgroundColor=color;
+}
 function Search()
 {
 	var searchInput = document.getElementById("searchInput").value.toUpperCase();
