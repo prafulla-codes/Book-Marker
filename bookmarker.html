@@ -3,6 +3,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title> Book Marker </title>
 <style>
+input[type=text]
+{
+	width:100%;
+	border:3px black solid;
+	height:5%;
+	font-size:1.2em;
+	border-radius:8px;
+}
+	input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
 @media only screen and (min-width:1000px)
 {
 	body{
@@ -199,11 +211,33 @@
 <br/>
 <center><input type="button" value="Add Bookmark" name="b1" id="button"></center>
 </div>
+<center><input type="text" placeholder=" Search Your Bookmark" id="searchInput"></center>
 <div class="bookmarks_panel" id="bookmarks_p">
 	<br/>
 </div>
 <script>
 document.getElementById("button").addEventListener('click',addBookMark);
+document.getElementById("searchInput").addEventListener('keyup',Search);
+
+function Search()
+{
+	var searchInput = document.getElementById("searchInput").value.toUpperCase();
+	var bookmark_panel = document.getElementById("bookmarks_p");
+	var bookmarks = bookmark_panel.querySelectorAll("div.bookmark");
+	for(var i=0;i<bookmarks.length;i++)
+		{
+			var id = bookmarks[i].id.toUpperCase();
+			if(id.includes(searchInput))
+			{
+				bookmarks[i].style.display='';
+			}
+			else
+			{
+				bookmarks[i].style.display='none';
+			}
+	}
+
+}
 function loadBookMarks()
 {
 	var bookmarks=JSON.parse(localStorage.getItem('bookmarks'));
@@ -213,10 +247,10 @@ function loadBookMarks()
 	}
 	else
 	{
-	console.log(bookmarks);
 	for(var i=0;i<bookmarks.length;i++)
 	{
-		document.getElementById('bookmarks_p').innerHTML+="<center><div class='bookmark'><h1>"+bookmarks[i].name+"</h1><a href='"+bookmarks[i].url+"' target='_new'><input type='button' value='Visit'></input></a> <input type='button' value='Delete' onclick='deleteBookMark("+i+")'></input></div></center><br/>";
+		document.getElementById('bookmarks_p').innerHTML+="<center><div class='bookmark' id='"+bookmarks[i].name+"'><h1>"+bookmarks[i].name+"</h1><a href='"+bookmarks[i].url+"' target='_new'><input type='button' value='Visit'></input></a> <input type='button' value='Delete' onclick='deleteBookMark("+i+")'></input></div></center><br/>";
+
 	}
 }
 }
