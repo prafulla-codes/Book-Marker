@@ -22,19 +22,17 @@ input[type=text]
 	}
 	.bookmark_form
 	{
-		overflow:hidden;
 		background-color:black;
 		border:2px white inset;
 		margin-left:10%;
 		margin-top:1%;
 		width:80%;
-		height:40%;
+		height:400px;
 		opacity:0.95;
 		border-radius:25px;
 	}
 	.bookmark_form input[type="text"]
 	{
-		overflow:hidden;
 		margin-top:1%;
 		height:40px;
 		width:800px;
@@ -44,13 +42,11 @@ input[type=text]
 	}
 	.bookmark_form label
 	{
-		overflow:hidden;
 		color:white;
 		font-size:1.5em;
 	}
 	.bookmark_form input[type="button"]
 	{
-		overflow:hidden;
 		margin-top:1%;
 		height:50px;
 		width:400px;
@@ -72,7 +68,7 @@ input[type=text]
 		width:90%;
 		float:center;
 		background-color:black;
-		height:30%;
+		height:250px;
 		border:2px white inset;
 		margin-top:1%;
 		border-radius:25px;
@@ -218,6 +214,7 @@ input[type=text]
 <center><input type="text" placeholder=" Search Your Bookmark" id="searchInput"></center>
 <div class="bookmarks_panel" id="bookmarks_p">
 	<br/>
+	<h1 id="bookmarks_count" style="color:white"></h1>
 </div>
 <script>
 document.getElementById("button").addEventListener('click',addBookMark);
@@ -252,6 +249,8 @@ function Search()
 function loadBookMarks()
 {
 	var bookmarks=JSON.parse(localStorage.getItem('bookmarks'));
+	var b = document.getElementById("bookmarks_count");
+	b.innerHTML=" Total Bookmarks: "+bookmarks.length;
 	if(bookmarks===null)
 	{
 		alert("please add a bookmark!");
