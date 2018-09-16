@@ -4,7 +4,9 @@ Book-Marker is an open-source,user-friendly google chrome extension , it allows 
 visit them whenever they want , it provides an user-friendly way to book-mark any website you visit
 
 Installation Steps:-
-Step 1 : Download "Book-Marker By Pika1998" folder from this repository.
+<ol>
+  
+<li>Step 1 : Download "Book-Marker By Pika1998" folder from this repository.</li>
 Step 2 : Open Google Chrome and type "chrome://extensions" in the url.
 Step 3 : Enable the developer mode.
 Step 4 : Click On "Load Unpacked" and browse for "Book-Marker By Pika1998" folder.
