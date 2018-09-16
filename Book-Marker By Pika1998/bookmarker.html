@@ -1,0 +1,221 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> Book Marker </title>
+<style>
+input[type=text]
+{
+	width:100%;
+	border:3px black solid;
+	height:25px;
+	font-size:1.2em;
+	border-radius:8px;
+}
+	input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+@media only screen and (min-width:1000px)
+{
+	body{
+		margin:0px;
+	}
+	.bookmark_form
+	{
+		background-color:black;
+		border:2px white inset;
+		margin-left:10%;
+		margin-top:1%;
+		width:80%;
+		height:400px;
+		opacity:0.95;
+		border-radius:25px;
+	}
+	.bookmark_form input[type="text"]
+	{
+		margin-top:1%;
+		height:40px;
+		width:800px;
+		border:1px white inset;
+		border-radius:8px;
+		font-size:1.5em;
+	}
+	.bookmark_form label
+	{
+		color:white;
+		font-size:1.5em;
+	}
+	.bookmark_form input[type="button"]
+	{
+		margin-top:1%;
+		height:50px;
+		width:400px;
+		border:1px white inset;
+		border-radius:8px;
+		font-size:1.5em;
+	}
+	.bookmarks_panel
+	{
+		width: 100%;
+		height: wrap-content;
+		background-color:black;
+		opacity: 0.95;
+		margin-top: 1%;
+		font-size:1.5em;
+	}
+	.bookmark 
+	{
+		width:90%;
+		float:center;
+		background-color:black;
+		height:250px;
+		border:2px white inset;
+		margin-top:1%;
+		border-radius:25px;
+		color:white;
+		font-size:1.5em;
+	}
+	.bookmark input[type="button"]
+	{
+		overflow:hidden;
+		margin-top:1%;
+		height:50px;
+		width:400px;
+		border:1px white inset;
+		border-radius:8px;
+		font-size:1.5em;
+		line-height:0.2em;
+	}
+	.bookmark h1
+	{
+		overflow:hidden;
+		margin-top:1%;
+	}
+	input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+	input[type="button"]:hover
+	{
+		background-color:black;
+		cursor:pointer;
+		color:white;
+	}
+}
+@media only screen and (min-width:80px) and (max-width:1000px)
+{
+		body{
+		margin:0px;
+	}
+	.bookmark_form
+	{
+		overflow:hidden;
+		background-color:black;
+		border:2px white inset;
+		margin-top:1%;
+		width:100%;
+		height:350px;
+		opacity:0.95;
+		border-radius:25px;
+	}
+	.bookmark_form input[type="text"]
+	{
+		overflow:hidden;
+		margin-top:1%;
+		height:15%;
+		width:80%;
+		border:1px white inset;
+		border-radius:8px;
+		font-size:0.8em;
+	}
+	.bookmark_form label
+	{
+		overflow:hidden;
+		color:white;
+		font-size:0.8em;
+	}
+	.bookmark_form input[type="button"]
+	{
+		overflow:hidden;
+		margin-top:1%;
+		height:10%;
+		width:80%;
+		border:1px white inset;
+		border-radius:8px;
+		font-size:0.8em;
+	}
+	.bookmarks_panel
+	{
+		width: 100%;
+		height: wrap-content;
+		background-color:black;
+		opacity: 0.95;
+		margin-top: 1%;
+		font-size:0.8em;
+	}
+	.bookmark 
+	{
+		width:95%;
+		float:center;
+		background-color:black;
+		height:150px;
+		border:2px white inset;
+		margin-top:1%;
+		border-radius:25px;
+		color:white;
+		font-size:0.8em;
+	}
+	.bookmark input[type="button"]
+	{
+		overflow:hidden;
+		margin-top:1%;
+		height:20%;
+		width:50%;
+		border:1px white inset;
+		border-radius:8px;
+		font-size:0.8em;
+		line-height:0.2em;
+	}
+	.bookmark h1
+	{
+		overflow:hidden;
+		margin-top:1%;
+	}
+	input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+	input[type="button"]:hover
+	{
+		background-color:black;
+		cursor:pointer;
+		color:white;
+	}
+}
+}
+</style>
+<link rel="icon" href="star-icon.png">
+</head>
+<body onload="loadBookMarks()" id="body">
+<div class="bookmark_form">
+<br/>
+<label><center>Bookmark Name</center></label>
+<center><input type="text" id="name" placeholder=" Enter The Name Of Website / Page "></center>
+<br/>
+<label><center>URL</center></label>
+<center><input type="text" id="url" placeholder=" Enter URL "></center>
+<br/>
+<center><input type="button" value="Add Bookmark" name="b1" id="button"></center>
+<hr/>
+<label> &nbsp Set Background <input type="text" id="backgroundcolorcode" style="width:50%;font-size:0.7em" placeholder=" Color-Name/Color-Code"></label>
+</div>
+<br/>
+<br/>
+<center><input type="text" placeholder=" Search Your Bookmark" id="searchInput"></center>
+<div class="bookmarks_panel" id="bookmarks_p">
+	<br/>
+	<h1 id="bookmarks_count" style="color:white"></h1>
+</div>
+<script src="main_script.js"></script>
+</body>
+</html>
