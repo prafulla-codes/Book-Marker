@@ -1,5 +1,5 @@
-Book-Marker By Pika1998
-------------------------
+<center><b>Book-Marker By Pika1998</b></center>
+<hr/>
 Book-Marker is an open-source,user-friendly google chrome extension , it allows users to bookmark their important websites and
 visit them whenever they want , it provides an user-friendly way to book-mark any website you visit
 <hr/>
