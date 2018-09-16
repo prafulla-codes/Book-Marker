@@ -1,6 +1,0 @@
-  {
-    "name": "Book-Marker By Pika1998",
-    "version": "1.2",
-    "description": "This is a web-application which allows users to bookmark their favourite / important websites , this software allows them to search bookmarks easily and visit the bookmarked pages easily.",
-    "manifest_version": 2
-  }
