@@ -14,23 +14,26 @@ document.getElementById("body").onload = function()
 	{
 	for(var i=0;i<bookmarks.length;i++)
 	{
-		document.getElementById('bookmarks_p').innerHTML+="<center><div class='bookmark' id='"+bookmarks[i].name+"'><h1>"+bookmarks[i].name+"</h1><a href='"+bookmarks[i].url+"' target='_new'><input type='button' value='Visit'></input></a> <input type='button' value='Delete' id='"+bookmarks[i].name+"'></input></div></center><br/>";
+		document.getElementById('bookmarks_p').innerHTML+="<center><div class='bookmark' id='"+bookmarks[i].name+"'><h1>"+bookmarks[i].name+"</h1><a href='"+bookmarks[i].url+"' target='_new'><input type='button' value='Visit'></input></a> <input type='button' value='Delete' class='deletebuttons'></input></div></center><br/>";
 
 	}
 	setListeners();
 }
 }
 
-//DOM
-function setListeners() {
-	var bookmarks=JSON.parse(localStorage.getItem('bookmarks'));
-	for(var i=0;i<bookmarks.length;i++)
+function setListeners()
+{
+	var buttons = document.querySelectorAll('.deletebuttons');
+	console.log(buttons);
+	for(let i=0;i<buttons.length;i++)
 	{
-		var tags = document.querySelector("input#"+bookmarks[i].name);
-		console.log(tags[0].id);
-		tags[0].addEventListener('click',deleteBookMark(i))
+		buttons[i].addEventListener('click',function()
+			{
+			deleteBookMark(i);
+			});
 	}
 }
+
 
 function setBackground()
 {
@@ -84,6 +87,7 @@ function addBookMark(e)
 		{
 			barray.push(bookmark);
 			localStorage.setItem('bookmarks',JSON.stringify(barray));
+			alert("Success: Added Bookmark");
 			window.location.reload();
 		}
 		else
@@ -91,7 +95,9 @@ function addBookMark(e)
 			var b = JSON.parse(localStorage.getItem('bookmarks'));
 			b.push(bookmark);
 			localStorage.setItem('bookmarks',JSON.stringify(b));
+			alert("Success: Added Bookmark");
 			window.location.reload();
 		}
 	}
 }
+

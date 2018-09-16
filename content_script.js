@@ -1,1 +1,1 @@
-chrome.runtime.sendMessage(document.getElementsByTagName('title')[0].innerText);
+chrome.runtime.sendMessage({"required_title":document.title,"required_url":document.location.href});

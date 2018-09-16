@@ -28,8 +28,11 @@
 	"content_scripts": [
 	{
 	"matches": ["http://*/*","https://*/*"],
-	"js": ["content_script.js"]
+	"js": ["content_script.js","menu.js"]
 	}
-	]
+	],
+  "chrome_url_overrides": {
+    "bookmarks" : "bookmarker.html"
+  }
   }
   
