@@ -67,10 +67,25 @@ localStorage.setItem('bookmarks',JSON.stringify(bookmarks));
 window.location.reload();
 }
 
+function addCategory()
+{
+	var categories = JSON.parse(localStorage.getItem('categories'));
+	if(categories==null)
+	{
+		categories=[];
+	
+	}
+	else
+	{
+
+	}
+}
+
 function addBookMark(e)
 {
 	var bname=document.getElementById("name").value;
 	var burl=document.getElementById("url").value;
+
 	var bookmark = {
 		name : bname ,
 		url : burl
