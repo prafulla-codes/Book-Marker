@@ -14,8 +14,7 @@ document.getElementById("body").onload = function()
 	{
 	for(var i=0;i<bookmarks.length;i++)
 	{
-		document.getElementById('bookmarks_p').innerHTML+="<center><div class='bookmark' id='"+bookmarks[i].name+"'><h1>"+bookmarks[i].name+"</h1><a href='"+bookmarks[i].url+"' target='_new'><input type='button' value='Visit'></input></a> <input type='button' value='Delete' class='deletebuttons'></input></div></center><br/>";
-
+		document.getElementById('bookmarks_p').innerHTML+="<center><div class='bookmark' id='"+bookmarks[i].name+"'><h3 style='font-size:0.5uv;'>"+bookmarks[i].name+"</h3><a href='"+bookmarks[i].url+"' target='_new'><input type='button' value='Visit'></input></a> <input type='button' value='Delete' class='deletebuttons'></input></div></center><br/>";
 	}
 	setListeners();
 }
@@ -67,19 +66,7 @@ localStorage.setItem('bookmarks',JSON.stringify(bookmarks));
 window.location.reload();
 }
 
-function addCategory()
-{
-	var categories = JSON.parse(localStorage.getItem('categories'));
-	if(categories==null)
-	{
-		categories=[];
-	
-	}
-	else
-	{
 
-	}
-}
 
 function addBookMark(e)
 {
@@ -88,7 +75,8 @@ function addBookMark(e)
 
 	var bookmark = {
 		name : bname ,
-		url : burl
+		url : burl,
+		category : ""
 	}
 	if(bname==""||burl=="")
 	{
