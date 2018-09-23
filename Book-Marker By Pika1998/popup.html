@@ -2,11 +2,15 @@
 <head>
   <title> BookMarker v1.2 </title>
   <style>
+  input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
   body
   {
     margin:0px;
-    width:250px;
-    height:350px;
+    width:290px;
+    height:400px;
     border:1px white solid;
     background-color:black;
     color:white;
@@ -19,12 +23,27 @@
     border-radius:25px;
     border:1px white solid;
   }
+  input[type="text"]
+  {
+    width:95%;
+    height:30px;
+    border-radius:25px;
+    border:1px white solid;
+  }
   input[type="button"]:hover
   {
     background-color:black;
     color:white;
     cursor:pointer;
   }
+  select
+   {
+    width:95%;
+    height:30px;
+    border-radius:25px;
+    border:1px white solid;
+  }
+
 </style>
 </head>
 <body>
@@ -41,8 +60,9 @@
 <center><input type="button" value="Add To BookMarks" id="addToBookMarks"></center>
 <br/>
 <center><input type="button" value="Clear Bookmarks" id="clearAllBookMarks"></center>
-<input type="text" id="category_name">
-<center><input type="button" value="Add New Category" id="addNewCategory"></center>
+<br/>
+ &nbsp <input type="text" id="category_name"style="width:45%;text-align: center;" placeholder="Category Name"> <input type="button" value="Add New Category" id="addNewCategory" style="width:45%"><br/><br/>
+&nbsp <select id="select_category" style="width:45%;text-align: center;"></select> <input type="button" value="Delete Category" id="deleteCategory" style="width:45%"><br/><br/>
 <script src="menu.js"></script>
 </body>
 </html>
