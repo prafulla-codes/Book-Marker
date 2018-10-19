@@ -13,4 +13,4 @@ visit them whenever they want , it provides an user-friendly way to book-mark an
 <li><u>Step 5 :- </u> The Extension will get added in the list and you will find the logo in toolbar.</li>
 <br/>
 <br/>
-<img src="http://www.qygjxz.com/data/out/123/5846173-images-download.png" height="10px" width="10px"><a href="https://github.com/Pika1998/Book-Marker/releases/tag/v1.3" style="height:100px;width:100px"> Click Here To Get Latest Version </a>
+<img src="http://www.qygjxz.com/data/out/123/5846173-images-download.png" height="30px" width="30px"><a href="https://github.com/Pika1998/Book-Marker/releases/tag/v1.3" style="height:100px;width:100px"> Click Here To Get Latest Version </a>
