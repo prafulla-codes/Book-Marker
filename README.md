@@ -11,3 +11,5 @@ visit them whenever they want , it provides an user-friendly way to book-mark an
 <li><u>Step 3 :- </u> Enable the developer mode.</li>
 <li><u>Step 4 :- </u> Click On "Load Unpacked" and browse for "Book-Marker By Pika1998" folder.</li>
 <li><u>Step 5 :- </u> The Extension will get added in the list and you will find the logo in toolbar.</li>
+
+<a href="https://github.com/Pika1998/Book-Marker/releases/tag/v1.3"> Click Here To Get Latest Version </a>
