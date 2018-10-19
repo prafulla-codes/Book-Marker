@@ -17,8 +17,7 @@ function addExternalBookMark(title,url)
 {
 	var bookmark = {
 		name : title ,
-		url : url,
-		category : "";
+		url : url
 	}
 	if(title==""||url=="")
 	{

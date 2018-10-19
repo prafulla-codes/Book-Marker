@@ -19,6 +19,7 @@ input[type=text]
 {
 	body{
 		margin:0px;
+		text-align: center;
 		background-color:black;
 	}
 	.bookmark_form
@@ -28,7 +29,6 @@ input[type=text]
 		margin-left:10%;
 		margin-top:1%;
 		width:80%;
-		color:black;
 		height:400px;
 		opacity:0.95;
 		border-radius:15px;
@@ -40,21 +40,29 @@ input[type=text]
 		width:800px;
 		border:2px black inset;
 		border-radius:8px;
-		font-size:1.5em;
+		font-size:1.2em;
 	}
 	.bookmark_form label
 	{
-		color:black;
-		font-size:1.5em;
+		font-size:1.2em;
+		font-weight: bolder;
+		font-style: bold;
+		font-family: sans-serif;
 	}
 	.bookmark_form input[type="button"]
 	{
 		margin-top:1%;
 		height:50px;
 		width:400px;
+		font-weight: bolder;
 		border:1px black inset;
 		border-radius:8px;
-		font-size:1.5em;
+		font-size:1em;
+	}
+	hr{
+		color: black;
+		background-color: black;
+		height: 2px;
 	}
 	.bookmarks_panel
 	{
@@ -63,30 +71,29 @@ input[type=text]
 		background-color:black;
 		opacity: 0.95;
 		margin-top: 1%;
-		font-size:1.5em;
+		font-size:1.2em;
 	}
 	.bookmark 
 	{
-		width:60%;
+		width:90%;
 		float:center;
 		background-color:white;
-		min-height:200px;
+		height:250px;
 		border:2px white inset;
 		margin-top:1%;
 		border-radius:25px;
-		color:black;
-		font-size:1.5em;
+		font-size:1.2em;
 	}
 	.bookmark input[type="button"]
 	{
 		overflow:hidden;
 		margin-top:1%;
-		max-height:50px;
-		min-height:34px;
+		height:50px;
 		width:400px;
 		border:2px black inset;
 		border-radius:8px;
-		font-size:1.2uv;
+		font-size:1em;
+		font-weight: bolder;
 		line-height:0.2em;
 	}
 	.bookmark h1
@@ -97,6 +104,44 @@ input[type=text]
 	input:focus::-webkit-input-placeholder 
 {
     color: transparent;
+}
+input[type="color"]
+{
+	height: 35px;
+	float: left;
+	border:none;
+	box-sizing: none;
+	overflow: hidden;
+	margin: none;
+	padding: none;
+	background-color: none;
+	background:none;
+	vertical-align: middle;
+}
+input[type="color"]:hover{
+	cursor: pointer;
+}
+input[type="range"]
+{
+	-webkit-appearance:none;
+	margin-left: 15px;
+	float: left;
+	margin-top: 15px;
+	background-color:white;
+	border: 3px solid black;
+	height: 20px;
+	width: 100px;
+}
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance:none;
+	height: 20px;
+	background-color: darkgreen;
+	width: 15px;
+	border: 4px solid black;
+	border-radius: 10%;
+}
+input[type="range"]:hover{
+	cursor: pointer;
 }
 	input[type="button"]:hover
 	{
@@ -136,7 +181,6 @@ input[type=text]
 	.bookmark_form label
 	{
 		overflow:hidden;
-		color:black;
 		font-size:0.8em;
 	}
 	.bookmark_form input[type="button"]
@@ -167,15 +211,14 @@ input[type=text]
 		border:2px white inset;
 		margin-top:1%;
 		border-radius:25px;
-		color:black;
 		font-size:0.8em;
 	}
 	.bookmark input[type="button"]
 	{
 		overflow:hidden;
 		margin-top:1%;
-		height:10%;
-		width:30%;
+		height:20%;
+		width:50%;
 		border:1px white inset;
 		border-radius:8px;
 		font-size:0.8em;
@@ -204,19 +247,28 @@ input[type=text]
 <body onload="loadBookMarks()" id="body">
 <div class="bookmark_form">
 <br/>
-<label><center>Bookmark Name</center></label>
-<center><input type="text" id="name" placeholder=" Enter The Name Of Website / Page "></center>
+<input type="text" id="name" placeholder=" Enter The Name Of Website / Page ">
 <br/>
-<label><center>URL</center></label>
-<center><input type="text" id="url" placeholder=" Enter URL "></center>
+<input type="text" id="url" placeholder=" Enter URL ">
 <br/>
-<center><input type="button" value="Add Bookmark" name="b1" id="button"></center>
+<input type="button" value="ADD BOOKMARK" style="font-size: 1.2em" name="b1" id="button">
 <hr/>
-<label> &nbsp Set Background <input type="text" id="backgroundcolorcode" style="width:50%;font-size:0.7em" placeholder=" Color-Name/Color-Code"></label>
+<label style="float:left;padding-top: 10px"> &nbsp SET BACKGROUND COLOR  &nbsp </label> 
+<input type="color" id="backgroundcolorcode">
+<label style="float:left;padding-top: 10px;margin-left: 15px"> &nbsp SET BOOKMARK COLOR &nbsp </label> 
+<input type="color" id="bookmarkscolorcode">
+<label style="float:left;padding-top: 10px;margin-left: 15px"> &nbsp SET FONT COLOR &nbsp </label> 
+<input type="color" id="fontcolorcode">
+<br/>
+<br/>
+<br/>
+<hr/>
+<label style="float:left;padding-top: 10px;margin-left: 15px">SET BOOKMARK OPACITY &nbsp </label> 
+<input type="range" name="Opacity" class="slider" id="bookmarkOpacity" min="0.0" max="1.0" step="0.05">
 </div>
 <br/>
 <br/>
-<center><input type="text" placeholder=" Search Your Bookmark" id="searchInput" style="height:60px;font-size:1.5em"></center>
+<input type="text" placeholder=" Search Your Bookmark" id="searchInput" style="height:60px;font-size:1.5em">
 <div class="bookmarks_panel" id="bookmarks_p">
 	<h1 id="bookmarks_count" style="color:white"></h1>
 </div>
