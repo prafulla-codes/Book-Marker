@@ -9,7 +9,7 @@ alert(document.getElementById("bgimageinput").value);
 });
 
 var categories = JSON.parse(localStorage.getItem("categories"));
-document.getElementById("searchByCategory").innerHTML="<option>All Bookmarks</option>";
+document.getElementById("searchByCategory").innerHTML="<option disabled selected>--Search By Category--</option><option>All Bookmarks</option>";
 for(var k=0;k<categories.length;k++)
 {
 	document.getElementById("searchByCategory").innerHTML +=`<option> ${categories[k]}</option>`
@@ -72,7 +72,14 @@ document.getElementById("body").onload = function()
 		document.getElementById("bookmarkscolorcode").value=color_storage[1];
 		document.getElementById("fontcolorcode").value=color_storage[2];
 	}
+	if(JSON.parse(localStorage.getItem("bookmarks"))!=null)
+	{
 	b.innerHTML=" Total Bookmarks: "+bookmarks.length;
+	}
+	else
+	{
+		b.innerHTML=" Total Bookmarks: 0";
+	}
 	if(bookmarks===null)
 	{
 		alert("please add a bookmark!");
