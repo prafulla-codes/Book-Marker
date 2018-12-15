@@ -37,18 +37,21 @@ document.getElementById("body").onload = function()
 	{
 	for(var i=0;i<bookmarks.length;i++)
 	{
-		document.getElementById('bookmarks_p').innerHTML+=`<div class='bookmark' id="${bookmarks[i].name}"><input class='deletebuttons' type='button' value="X"><h1>${bookmarks[i].name}</h1><br><hr>
+		document.getElementById('bookmarks_p').innerHTML+=`<div class='bookmark' id="${bookmarks[i].name}"><input class='deletebuttons' type='button' value="X"><h1>${bookmarks[i].name}</h1><br>
+		<hr>
 		<fieldset class="fieldset">
-		<legend class="fieldsetLegend"> Category </legend>
+		<legend class="fieldsetLegend">Set Category</legend>
 		<select id="select${bookmarks[i].name}" class="categorieSelect" size=2 selected=${bookmarks[i].category}>
 		`+putCategoriesInSelectBoxes()+`
 		</select>
-		<br><br>
+		</fieldset>
+		<br>
+		<fieldset class="fieldset">
 		<div class="categoryDiv">
 		<p style="display:inline" id="categoryselect${bookmarks[i].name}">${bookmarks[i].category}</p>
 		</div>
 		</fieldset>
-		<a href='${bookmarks[i].url}' target='_new'><input type='button' value='Visit' class="visitbutton"></input></a> </input></div>`;
+		<a href='${bookmarks[i].url}' target='_new'><input type='button' value='Visit' class="visitbutton"></a></div>`;
 
 	}
 	var bkmarks = document.querySelectorAll(".bookmark");

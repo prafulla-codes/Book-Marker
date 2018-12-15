@@ -13,6 +13,23 @@ input[type=search]
 	font-family: sans-serif;
 	box-shadow:1px 1px 15px  2px black;
 	height:25px;
+	display:inline-table;
+	font-size:1.2em;
+	border-radius:8px;
+}
+#searchbyCategory{
+	width:38%;
+	color:gray;
+	border:none;
+	font-size:1.5em;
+	display: inline-table;
+	float:right;
+	margin-top:-62px;
+	margin-right:10%;
+	font-weight: bolder;
+	font-family: sans-serif;
+	box-shadow:1px 1px 15px  2px black;
+	height:61px;
 	font-size:1.2em;
 	border-radius:8px;
 }
@@ -52,9 +69,10 @@ input[type=text]
 		background-color:#cfe0fc;
 	}
 	.visitbutton{
-		width:100px;
+		width:70%;
 		margin-top:8px;
 		border:none;
+		height:25px;
 		font-weight: bolder;
 		border-radius:10px;
 		box-shadow:-1px 1px 5px black;
@@ -110,6 +128,7 @@ input[type=text]
 		border:3px black solid;
 	}
 	.fieldsetLegend {
+		text-align: left;
 		color:black;
 		font-size:1.2em;
 		font-weight: bolder;
@@ -149,12 +168,16 @@ input[type=text]
 		margin-top:1%;
 		height:50px;
 		width:50%;
+		margin-bottom:20px;
 		font-weight: bolder;
-		border:1px black inset;
+		background-color:rgb(175, 219, 157);
+		box-shadow: -2px -2px 15px black;
+		border:none;
 		border-radius:8px;
 		font-size:1em;
 	}
 	hr{
+		margin-top:-10px;
 		color: black;
 		background-color: black;
 		height: 2px;
@@ -195,7 +218,7 @@ input[type=text]
 		display: inline-block;
 		margin-left: 1.5%;
 		background-color:white;
-		height: 190px;
+		height: 205px;
 		padding:20px;
 		border:none;
 		box-shadow: -1px -1px 13px 2px black;
@@ -218,7 +241,7 @@ input[type=text]
 	{
 		overflow:hidden;
 		margin-top:1%;
-		font-size:1.4em;
+		font-size:1.2em;
 		font-family: sans-serif;
 	}
 	.bookmark h1:hover{
@@ -395,6 +418,9 @@ input[type="range"]:hover{
 <br/>
 <br/>
 <input  type="search" placeholder=" Search Your Bookmark" id="searchInput" style="height:60px;font-size:1.5em">
+<select id="searchByCategory">
+<option disabled selected>--Search By Category--</option>
+</select>
 <div class="bookmarks_panel" id="bookmarks_p">
 	<h1 id="bookmarks_count" style="color:white"></h1>
 </div>
