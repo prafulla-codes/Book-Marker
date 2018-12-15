@@ -22,7 +22,7 @@ function addExternalBookMark(title,url)
 	}
 	if(title==""||url=="")
 	{
-		alert("Please Enter Bookmark Name & URL!");
+		alert("Failed to add bookmark , please reload the page.");
 	}
 	else
 	{
