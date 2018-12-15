@@ -5,10 +5,54 @@ document.getElementById("backgroundcolorcode").addEventListener('input',setBackg
 document.getElementById("fontcolorcode").addEventListener('input',setFontColor);
 document.getElementById("bookmarkOpacity").addEventListener('input',setOpacity);
 document.getElementById("bgimageinput").addEventListener("input",()=>{
-
 alert(document.getElementById("bgimageinput").value);
 });
 
+var categories = JSON.parse(localStorage.getItem("categories"));
+document.getElementById("searchByCategory").innerHTML="<option>All Bookmarks</option>";
+for(var k=0;k<categories.length;k++)
+{
+	document.getElementById("searchByCategory").innerHTML +=`<option> ${categories[k]}</option>`
+}
+
+document.getElementById("searchByCategory").addEventListener("change",()=>{
+	var bookmark_panel = document.getElementById("bookmarks_p");
+	var selected_category = document.getElementById("searchByCategory");
+	var selected = selected_category.options[selected_category.selectedIndex].text;
+	console.log(selected);
+	var bookmarks_main = JSON.parse(localStorage.getItem("bookmarks"));
+	var bookmarks = document.getElementsByClassName("bookmark");
+	console.log(bookmarks);
+	for(let i=0;i<bookmarks_main.length;i++)
+		{
+			console.log(bookmarks_main[i].category);
+			var bcategory = bookmarks_main[i].category;
+			if(selected=="All Bookmarks")
+			{
+				for(var j=0;j<bookmarks.length;j++)
+				{
+					bookmarks[j].style.display="inline-block";
+				}
+			}
+			else
+			{
+			if(selected!=bcategory)
+			{
+				var b=document.getElementById(bookmarks_main[i].name);
+				console.log(b);
+				b.style.display="none";
+			}
+		
+			else
+			{ 
+				console.log("category matched!");
+				var b=document.getElementById(bookmarks_main[i].name);
+				console.log(b);
+				b.style.display="inline-block";
+			}
+		}
+		}
+})
 document.getElementById("body").onload = function()
 {
 	var bookmarks=JSON.parse(localStorage.getItem('bookmarks'));

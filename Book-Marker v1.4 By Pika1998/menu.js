@@ -70,7 +70,7 @@ document.getElementById("deleteCategory").addEventListener('click',()=>{
 	var selected=document.getElementById("categories_view").value;
 	console.log(selected);
 	var categories = JSON.parse(localStorage.getItem("categories"));
-	for(var i=0;i<categories.length;i++)
+	for(var i=1;i<categories.length;i++)
 	{
 		if(selected==categories[i])
 		{

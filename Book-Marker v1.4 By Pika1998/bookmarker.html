@@ -3,18 +3,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title> Book Marker </title>
 <style>
-input[type=search]
+input[type="search"]
 {
 	width:40%;
 	border:none;
 	text-align:center;
+	height: 40px;
+	margin-top:0px;
 	font-size:1.5em;
 	font-weight: bolder;
 	font-family: sans-serif;
 	box-shadow:1px 1px 15px  2px black;
-	height:25px;
 	display:inline-table;
-	font-size:1.2em;
+	font-size:1em;
 	border-radius:8px;
 }
 #searchbyCategory{
@@ -24,12 +25,12 @@ input[type=search]
 	font-size:1.5em;
 	display: inline-table;
 	float:right;
-	margin-top:-62px;
+	margin-top:-42px;
 	margin-right:10%;
 	font-weight: bolder;
 	font-family: sans-serif;
 	box-shadow:1px 1px 15px  2px black;
-	height:61px;
+	height:40px;
 	font-size:1.2em;
 	border-radius:8px;
 }
@@ -142,7 +143,7 @@ input[type=text]
 		margin-top:1%;
 		box-shadow:-1px -1px 15px black;
 		width:80%;
-		height:400px;
+		height:320px;
 		opacity:0.95;
 		border-radius:15px;
 	}
@@ -179,6 +180,7 @@ input[type=text]
 	hr{
 		margin-top:-10px;
 		color: black;
+		border:1px solid black;
 		background-color: black;
 		height: 2px;
 	}
@@ -239,8 +241,9 @@ input[type=text]
 
 	.bookmark h1
 	{
+		height:35px;
 		overflow:hidden;
-		margin-top:1%;
+		margin-top:-5px;
 		font-size:1.2em;
 		font-family: sans-serif;
 	}
@@ -417,9 +420,9 @@ input[type="range"]:hover{
  
 <br/>
 <br/>
-<input  type="search" placeholder=" Search Your Bookmark" id="searchInput" style="height:60px;font-size:1.5em">
+<input  type="search" placeholder=" Search Your Bookmark" id="searchInput" font-size:1.5em">
 <select id="searchByCategory">
-<option disabled selected>--Search By Category--</option>
+
 </select>
 <div class="bookmarks_panel" id="bookmarks_p">
 	<h1 id="bookmarks_count" style="color:white"></h1>
