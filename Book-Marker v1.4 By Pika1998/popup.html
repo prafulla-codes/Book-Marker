@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title> BookMarker v1.4 </title>
+  <style>
+  body
+  {
+    margin:0px;
+    width:250px;
+    height:598px;
+    border:1px white solid;
+    background-color:black;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    animation-duration:0.2s;
+    animation-name:popup-entry;
+  }
+  @keyframes popup-entry{
+  from{width:0px}
+  to{width:250px}
+  }
+  input[type="button"]
+  {
+    width:95%;
+    height:30px;
+    border-radius:25px;
+    border:1px white solid;
+  }
+ 
+  input[type="text"]
+  {
+    width:70%;
+    text-align: center;
+    height:30px;
+    border-radius:25px;
+    border:none;
+  }
+  .btn1
+  {
+    width:20%;
+    text-align: center;
+    height:30px;
+    border-radius:25px;
+    border:none;
+  }
+  input[type="button"]:hover
+  {
+    background-color:black;
+    color:white;
+    cursor:pointer;
+  }
+  select{
+    width:80%;
+    height: auto;
+    font-size:1.1em;
+    border-radius:5px;
+  }
+  option {
+    width:100%;
+    font-size:1.1em;
+  }
+</style>
+</head>
+<body>
+  <br/>
+<img src="images/b128.png" style="height:30px;width:30px"> 
+<h2> Book-Marker v1.4 </h2>
+<hr/>
+<h2> OPTIONS </h2>
+<hr/>
+<br/>
+<input type="button" value="View BookMarks" id="view">
+<br/>
+<br/>
+<input type="button" value="Add To BookMarks" id="addToBookMarks">
+<br/>
+<br/>
+<input type="button"  value="Clear Bookmarks" id="clearBookMarks">
+<br/>
+<br/>
+<hr>
+<h2>ADD CATEGORY</h2>
+<input type="text" id="category_name" placeholder="Enter Category Name">
+<input type="button" id="addCategory" class="btn1" style="width:20%" value="ADD">
+<br>
+<br>
+<hr>
+<h2>CATEGORIES</h2>
+<select id="categories_view" size=3>
+</select>
+<br>
+<br>
+<input type="button" id="deleteCategory" value="Delete Category">
+<script src="menu.js"></script>
+</body>
+</html>
