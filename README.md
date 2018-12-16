@@ -6,10 +6,10 @@ Book-Marker is a google chrome extension , which allows users to bookmark their 
 This extension allows :
 <ul type="square">
  <b><i>
- <li> Bookmark Creation & Management</li>
- <li> Category Management </li>
- <li> User Interface (UI) Control </li>
- <li> Category Search </li>
+ <li> Bookmark Creation & Management.</li>
+ <li> Category Management.</li>
+ <li> User Interface(UI) Control.</li>
+ <li> Category Search.</li>
   </b></i>
 </ul>
 <hr/>
