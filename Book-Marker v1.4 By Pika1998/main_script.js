@@ -7,7 +7,7 @@ document.getElementById("bookmarkOpacity").addEventListener('input',setOpacity);
 document.getElementById("bgimageinput").addEventListener("click",()=>{
 var bgsrc=prompt("Enter Link Of The Background Image:");
 body.style.backgroundImage=`url(${bgsrc})`;
-body.style.imageSize="cover";
+body.style.imageSize="100% 100%";
 document.getElementById("imageselected").innerHTML=bgsrc;
 localStorage.setItem("pageimage",bgsrc);
 });
