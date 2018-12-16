@@ -23,6 +23,8 @@ This extension allows :
  <img src="step1a.png" >
  <p> Download the zip file & extract it using WinRAR / WinZip<p>
  <a href="https://www.win-rar.com/predownload.html?&L=0"> Click Here To Get WinRAR</a>
+  <p> Or clone the repository using Git  </p>
+  <a href="https://git-scm.com/downloads"> Click Here To Download Git </a>
   </b></i>
  <br>
  <img src="step1b.png">
