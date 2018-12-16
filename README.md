@@ -16,8 +16,7 @@ This extension allows :
 <h2>Installation</h2>
 <b><i>
 <ol>
- <li> Download / Clone this repository onto your desktop / other folders. </li>
- <br>
+ <li><u>Step 1 </u>: Download / Clone this repository onto your desktop / other folders. <br>
  <br>
  <b><i>
  <img src="step1a.png" >
@@ -28,6 +27,14 @@ This extension allows :
   </b></i>
  <br>
  <img src="step1b.png">
+ <b><i> </li>
+
+  <li>Open google chrome browser & type "chrome://extensions" in the address bar </li>
+  </ol>
+     
+     
+     
+     
 <br>
  <br>
 <hr/>
