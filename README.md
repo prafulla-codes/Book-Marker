@@ -29,7 +29,11 @@ This extension allows :
  <img src="step1b.png">
  <b><i> </li>
 
-  <li>Open google chrome browser & type "chrome://extensions" in the address bar </li>
+  <li>Open google chrome browser & type "chrome://extensions" in the address bar 
+  <br>
+  <img src="step2.png"><br>
+ <p>This will open the Google Chrome Extension Manager</p>
+</li>
   </ol>
      
      
