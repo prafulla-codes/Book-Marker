@@ -1,6 +1,6 @@
-<img src="b128.png">
-<center><h1 style="color:red"> Book-Marker By Pika1998 </h1></center>
 <hr/>
+<h1 style="color:red" align="center"><img src="b128.png" width="25px" height="25px"> Book-Marker By Pika1998 </h1>
+
 Book-Marker is a google chrome extension , which allows users to bookmark their favourite / important websites.
 <br>
 This extension allows :
