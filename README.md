@@ -17,7 +17,7 @@ This extension allows :
 <b><i>
 <ol>
  <li> Download / Clone this repository onto your desktop / other folders. </li>
- 
+ <img src="part1a" align="left"><img src="part1b" align="right">
 <br>
 <hr/>
  </b></i>
