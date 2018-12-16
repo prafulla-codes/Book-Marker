@@ -19,9 +19,11 @@ This extension allows :
  <li> Download / Clone this repository onto your desktop / other folders. </li>
  <br>
  <br>
+ <b><i>
  <img src="step1a.png" >
- <p> Download the zip file & extract it using WinRar / WinZip<p>
- <p> Get WinRar : </p><a> https://www.win-rar.com/predownload.html?&L=0 </a>
+ <p> Download the zip file & extract it using WinRAR / WinZip<p>
+ <a href="https://www.win-rar.com/predownload.html?&L=0"> Click Here To Get WinRAR</a>
+  </b></i>
  <br>
  <img src="step1b.png">
 <br>
