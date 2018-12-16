@@ -154,7 +154,7 @@ function putCategoriesInSelectBoxes()
 	var x="";
 	for(var i=0;i<categories.length;i++)
 	{
-		x+=`<option class="categorieOptions" value=${categories[i]}>${categories[i]}</option>`;
+		x+=`<option class="categorieOptions" value="${categories[i]}">${categories[i]}</option>`;
 	}
 	return x;
 }
@@ -239,6 +239,8 @@ function setSelectBoxListeners()
 			{
 				if(categorySelectors[i].id == `select${bookmarks[j].name}`)
 				{
+
+					console.log(categorySelectors[i].value);
 					bookmarks[j].category = categorySelectors[i].value;
 					document.getElementById("category"+categorySelectors[i].id).innerHTML=categorySelectors[i].value;
 				}
