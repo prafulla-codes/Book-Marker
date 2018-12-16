@@ -19,7 +19,7 @@ This extension allows :
  <li> Download / Clone this repository onto your desktop / other folders. </li>
  <br>
  <br>
- <img src="step1a.png"  height="40%" width="40%"><img src="step1b.png"  height="40%" width="40%">
+ <img src="step1a.png"  height="45%" width="45%">&nbsp<img src="step1b.png"  height="45%" width="45%">
 <br>
  <br>
 <hr/>
