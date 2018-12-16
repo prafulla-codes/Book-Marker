@@ -4,10 +4,40 @@ document.getElementById("bookmarkscolorcode").addEventListener('input',setBookma
 document.getElementById("backgroundcolorcode").addEventListener('input',setBackground);
 document.getElementById("fontcolorcode").addEventListener('input',setFontColor);
 document.getElementById("bookmarkOpacity").addEventListener('input',setOpacity);
-document.getElementById("bgimageinput").addEventListener("input",()=>{
-alert(document.getElementById("bgimageinput").value);
+document.getElementById("bgimageinput").addEventListener("click",()=>{
+var bgsrc=prompt("Enter Link Of The Background Image:");
+body.style.backgroundImage=`url(${bgsrc})`;
+body.style.imageSize="cover";
+document.getElementById("imageselected").innerHTML=bgsrc;
+localStorage.setItem("pageimage",bgsrc);
 });
+document.getElementById("searchInput").addEventListener("search",()=>{
+	var bookmarks=document.getElementsByClassName("bookmark");
+	for(var j=0;j<bookmarks.length;j++)
+	{
+		bookmarks[j].style.display="inline-block";
+	}
+})
+var pageimage = localStorage.getItem("pageimage");
+if(pageimage===null)
+{
+	document.getElementById("imageselected").innerHTML="";
+	document.getElementById("imagebutton1").style.display="none";
+}
+else
+{
+	body.style.backgroundImage=`url(${pageimage})`;
+	document.getElementById("imageselected").innerHTML=pageimage;
+	document.getElementById("imagebutton1").style.display="";
+}
 
+document.getElementById("imagebutton1").addEventListener("click",()=>{
+	body.style.backgroundImage="none";
+	document.getElementById("imageselected").innerHTML="";
+	localStorage.removeItem("pageimage")
+	document.getElementById("imagebutton1").style.display="none";
+	window.location.reload();
+})
 var categories = JSON.parse(localStorage.getItem("categories"));
 document.getElementById("searchByCategory").innerHTML="<option disabled selected>--Search By Category--</option><option>All Bookmarks</option>";
 for(var k=0;k<categories.length;k++)

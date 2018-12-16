@@ -83,26 +83,37 @@ input[type=text]
 		margin-left:10%;
 		display: block;
 	}
+	#imagebutton1{
+		margin-top:6px;
+		margin-left:5px;
+		width:20px;
+		height:20px;
+		border-radius:3px;
+		padding-bottom:2px;
+		background-color:red;
+		font-weight: bolder;
+		padding-left:5px;
+		float:left;
+	}
 	#bgimageinput{
-		border:none;
-		margin:0px;
-		padding:0px;
-		font-weight: bolder;
+		width:150px;
+		padding-bottom:5px;
+		margin-top:3px;
+		background-color: rgb(103, 133, 113);
+		height:30px;
 	}
-	#bgimageinput::-webkit-file-upload-button{
-		border:none;
-		width:105px;
-		text-align:left;
-		text-indent: 10px;
-		background-size: cover;
-		z-index:1;
-		height:25px;
-		margin:0px;
-		padding:0px;
-		box-shadow:-1px 1px 5px  black;
-		border-radius:15px;
-		font-weight: bolder;
+	#imageselected{
+		float:left;
+		width:450px;
+		height:30px;
+		overflow:hidden;
+		margin-left:5px;
+		margin-top:8px;
+		font-size:1em;
+		color:blue;
+		font-weight:bolder;
 	}
+
 	.categoryDiv {
 		width:98%;
 		height:20px;
@@ -415,7 +426,8 @@ input[type="range"]:hover{
 <label style="float:left;padding-top: 10px;margin-left: 15px">SET BOOKMARK OPACITY &nbsp </label> 
 <input type="range" name="Opacity"  style="margin-top:7.2px" class="slider" id="bookmarkOpacity" min="0.0" max="1.0" step="0.05">
 <label style="float:left;padding-top: 10px;margin-left: 15px"> SET BACKGROUND IMAGE </label>
-<input type="file" accept="image/*" id="bgimageinput"  style="float:left;padding-top: 7px;margin-left: 4px">
+<input type="button" value="Set Image" id="bgimageinput"  style="float:left;padding-top: 7px;margin-left: 4px"><p id="imageselected" > </p><input type="button" id="imagebutton1" value="X">
+
 </div>
  
 <br/>
