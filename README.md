@@ -16,7 +16,7 @@ This extension allows :
 <h2>Installation</h2>
 <b><i>
 <ol>
- <li><u>Step 1 </u>: Download / Clone this repository onto your desktop / other folders. <br>
+ <li>Download / Clone this repository onto your desktop / other folders. <br>
  <br>
  <b><i>
  <img src="step1a.png" >
