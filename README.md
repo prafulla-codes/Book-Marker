@@ -18,8 +18,10 @@ This extension allows :
 <ol>
  <li> Download / Clone this repository onto your desktop / other folders. </li>
  <br>
+ <br>
  <img src="step1a.png" align="left" height="40%" width="40%"><img src="step1b.png" align="right" height="40%" width="40%">
 <br>
+ <br>
 <hr/>
  </b></i>
 <center><h2> Demo </h2></center>
