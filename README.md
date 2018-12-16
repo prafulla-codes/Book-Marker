@@ -41,16 +41,18 @@ This extension allows :
  <b><i><li>
 Click on the "Load Unpacked" Button <br> <font color="red">Note: this button won't appear if you are not in developer mode</font> 
  <img src="step4.png"></li></b></i>
- <b><i><li> After Clicking on "Load Unpacked" you will be prompted with a browse window to search for a folder , locate to the Book-Mark folder which you get after extracting the zip file / cloning the repository .
+ <b><i><li> After Clicking on "Load Unpacked" you will be prompted with a browse window to search for a folder , locate to the Book-Marker folder which you get after extracting the zip file / cloning the repository .
 
 Path :-  Book-Marker --> Book-Marker v1.4 By Pika1998 
 
 <img src="step5.png"></li></i></b>
-  </ol>
-     
-     
-     
-     
+<b><i><li>
+ Once you've done all the above steps , you will find "Book-Marker By Pika1998" extension in the extension list , and also the icon pointed at the image below.
+<img src="step6.png">
+
+This indicates successful installation & you can start using the Book-Marker :).
+</li></i></b>
+  </ol>     
 <br>
  <br>
 <hr/>
