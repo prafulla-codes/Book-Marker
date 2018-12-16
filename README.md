@@ -21,7 +21,7 @@ This extension allows :
  <br>
  <img src="step1a.png" >
  <p> Download the zip file & extract it using WinRar / WinZip<p>
- <p> Get WinRar : </p><a> https://www.win-rar.com/predownload.html?&L=0 >/a>
+ <p> Get WinRar : </p><a> https://www.win-rar.com/predownload.html?&L=0 </a>
  <br>
  <img src="step1b.png">
 <br>
