@@ -33,7 +33,11 @@ This extension allows :
   <br>
   <img src="step2.png"><br>
  <p>This will open the Google Chrome Extension Manager</p>
-</li>
+</li></b></i>
+<b><i><li>
+ Toggle / Turn ON the Developer Mode using the toggle switch.
+ <img src="step3.png"><br>
+ </li></b></i>
   </ol>
      
      
