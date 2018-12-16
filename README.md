@@ -1,5 +1,2 @@
-<html>
-  <body bgcolor="black" style="color:white">
-    <p>Hello</p>
-  </body>  
- </html>
+
+ <img src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg">
