@@ -29,7 +29,18 @@ This extension allows :
  <img src="step1b.png">
  <b><i> </li>
 
-  <li>Open google chrome browser & type "chrome://extensions" in the address bar </li>
+  <li>Open google chrome browser & type "chrome://extensions" in the address bar 
+  <br>
+  <img src="step2.png"><br>
+ <p>This will open the Google Chrome Extension Manager</p>
+</li></b></i>
+<b><i><li>
+ Toggle / Turn ON the Developer Mode using the toggle switch.
+ <img src="step3.png"><br>
+ </li></b></i>
+ <b><i><li>
+Click on the "Load Unpacked" Button <br> <font color="red">Note: this button won't appear if you are not in developer mode</font> 
+ <img src="step4.png"></li></b></i>
   </ol>
      
      
