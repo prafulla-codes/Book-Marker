@@ -13,9 +13,14 @@ This extension allows :
   </b></i>
 </ul>
 <hr/>
-<h2><center> Installation </h2></center>
+<h2>Installation</h2>
+<b><i>
+<ol>
+ <li> Download / Clone this repository onto your desktop / other folders. </li>
+ 
 <br>
 <hr/>
+ </b></i>
 <center><h2> Demo </h2></center>
  <img src="theme1.png" id="themes" height="50%" width="80%">
  <img src="theme2.png" id="themes" height="50%" width="80%">
