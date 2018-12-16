@@ -39,7 +39,7 @@ This extension allows :
  <img src="step3.png"><br>
  </li></b></i>
  <b><i><li>
-Click on the "Load Unpacked" Button <br> Note: this button won't appear if you are not in developer mode 
+Click on the "Load Unpacked" Button <br> <font color="red">Note: this button won't appear if you are not in developer mode</font> 
  <img src="step4.png"></li></b></i>
   </ol>
      
