@@ -38,6 +38,9 @@ This extension allows :
  Toggle / Turn ON the Developer Mode using the toggle switch.
  <img src="step3.png"><br>
  </li></b></i>
+ <b><i><li>
+Click on the "Load Unpacked" Button <br> Note: this button won't appear if you are not in developer mode 
+ <img src="step4.png"></li></b></i>
   </ol>
      
      
