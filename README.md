@@ -13,6 +13,17 @@ This extension allows :
   </b></i>
 </ul>
 <hr/>
+<h2> Book-Marker v1.4 Demo Video </h2>
+<img src="demo.png">
+<hr/>
+<h2> Example Themes </h2>
+<h3>Example Theme 1</h3>
+ <img src="theme1.png" id="themes" height="50%" width="100%">
+<h3>Example Theme 2 </h3>
+ <img src="theme2.png" id="themes" height="50%" width="100%">
+ <h3> Example Theme 3</h3>
+<img src="theme3.png" id="themes" height="50%" width="100%">
+<hr/>
 <h2>Installation Steps (Video) </h2>
 <a href="https://www.youtube.com/watch?v=1JPB_DERcOg"><img src="thumbnail installation.png" onhover="play.png"></a>
 
@@ -61,7 +72,4 @@ This indicates successful installation & you can start using the Book-Marker :).
  <br>
 <hr/>
  </b></i>
-<center><h2> Demo </h2></center>
- <img src="theme1.png" id="themes" height="50%" width="80%">
- <img src="theme2.png" id="themes" height="50%" width="80%">
-<img src="theme3.png" id="themes" height="50%" width="80%">
+
