@@ -14,7 +14,7 @@ This extension allows :
 </ul>
 <hr/>
 <h2> Book-Marker v1.4 Demo Video </h2>
-<img src="demo.png">
+<a href="https://www.youtube.com/watch?v=yNbg5Qzi-Wc&feature=youtu.be"><img src="demo.png"></a>
 <hr/>
 <h2> Example Themes </h2>
 <h3>Example Theme 1</h3>
