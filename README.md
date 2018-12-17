@@ -13,7 +13,12 @@ This extension allows :
   </b></i>
 </ul>
 <hr/>
-<h2>Installation</h2>
+<h2>Installation Steps (Video) </h2
+ <video controls>
+ <source src="installation.mp4">
+ </video>
+<hr/>
+<h2>Installation Steps (Text) </h2>
 <b><i>
 <ol>
  <li>Download / Clone this repository onto your desktop / other folders. <br>
