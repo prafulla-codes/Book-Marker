@@ -14,7 +14,8 @@ This extension allows :
 </ul>
 <hr/>
 <h2>Installation Steps (Video) </h2>
-[thumbnail installation.png](https://www.youtube.com/watch?v=1JPB_DERcOg)
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+
 <hr/>
 <h2>Installation Steps (Text) </h2>
 <b><i>
