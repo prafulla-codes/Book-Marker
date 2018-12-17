@@ -13,8 +13,8 @@ This extension allows :
   </b></i>
 </ul>
 <hr/>
-<h2>Installation Steps (Video) </h2
-<a href="https://www.youtube.com/watch?v=1JPB_DERcOg"><img src="thumbnail installation.png"><a>
+<h2>Installation Steps (Video) </h2>
+[thumbnail installation.png](https://www.youtube.com/watch?v=1JPB_DERcOg)
 <hr/>
 <h2>Installation Steps (Text) </h2>
 <b><i>
